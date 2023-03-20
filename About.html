@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--controlul dimensiunilor paginii pe alte dispozitive-->
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<title>Home</title>
+	<link rel = "stylesheet" href="Style.css">
+	<!--pentru iconitele de contact-->
+	<script src="https://kit.fontawesome.com/5978021386.js" crossorigin="anonymous"></script>
+	<!--pentru fontul ales-->
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!--pentru definierea sectiunii de antet-->
+	<section class = "about">
+		<nav>
+			<!--click pe logo redirectioneaza utilizatorul la pagina principala (home)-->
+			<a href = "Home.html">
+				<img src = "Images/logo2_2.png">
+            </a>
+				<div class = "nav-links">
+					<ul>
+						<!--linkurile de navigare-->
+						<li>
+							<a href="Home.html">home</a>
+						</li>
+						<li>
+							<a href="About.html">about</a>
+						</li>
+						<li>
+							<a href="Portofolio.html">portofolio</a>
+						</li>
+						<li>
+							<a href="Contact.html">contact</a>
+						</li>
+					</ul>
+				</div>
+		</nav>
+		<!--clasa pentru textul centrat din pagina-->
+		<div class = "text-box">
+			<h1>About me</h1>
+			<p>
+				I'm Dragomir Bianca Nicola, 324AC, born in Bacau, raised in Adjud and <br>currently living in Bucharest. What else?
+			</p>
+		</div>
+	</section>
+
+	<!--o noua sectiune pentru informatiile ce urmeaza dupa headerul special pentru about-->
+	<section class = "main-content">
+		<h1>
+			I'm obssesed with:
+		</h1>
+
+		<!--cream clase pentru rand si coloana pentru a le supune unor modificari in css mai tarziu-->
+		<div class = "row">
+			<div class = "col_img">
+				<img src = "Images/dinosaur.jpg">
+				<!--clasa layer adauga un layer pe iamgine in momentul in care mouse-ul utilizatorului atinge imaginea-->
+                <div class = "layer">
+                    <h3>dinosaurs</h3>
+                </div>
+            </div>
+			<div class = "col_img">
+                <img src = "Images/sheep.jpg">
+                <div class = "layer">
+                    <h3>sheep</h3>
+                </div>
+			</div>
+			<div class = "col_img">
+                <img src = "Images/orca.jpg">
+                <div class = "layer">
+                    <h3>orcas</h3>
+                </div>
+			</div>
+		</div>
+        <br><br><br><br>
+        <h1>
+            In my spare time, I:
+        </h1>
+    
+	<div class = "row">
+		<div class = "col_img">
+            <img src = "Images/insta100.png">
+            <div class = "layer">
+                <h3>
+                    do Digital Art
+                </h3>
+            </div>
+		</div>
+        <div class = "col_img">
+            <img src = "Images/photo1.jpeg">
+            <div class = "layer">
+                <h3>
+                    take Photographs
+                </h3>
+            </div>
+        </div>
+        <div class = "col_img">
+            <img src = "Images/studyread.jpg">
+            <div class = "layer">
+                <h3>
+                    study & read
+                </h3>
+            </div>
+        </div>
+    </div>
+	</section>
+
+	<!--ultima sectiune a paginii, si anume footer-ul-->
+	<section class = "footer">
+		<h3>Contact me here:</h3>
+		<!--clasa pentru iconitele utilizate pentru contact-->
+		<div class = "icons">
+			<!--linkuri furnizate de website-ul awesome font + linkuri spre retelele de socializare ale creatorului-->
+			<a href = "https://www.facebook.com/bianca.kp2002/"><i class="fa-brands fa-square-facebook"></i></a>                       
+			<a href = "https://www.instagram.com/bianca.xfk/"><i class="fa-brands fa-instagram"></i></a>
+			<a href = "https://www.linkedin.com/in/bianca-nicola-dragomir-849130218/"><i class="fa-brands fa-linkedin"></i></a>
+			<a href = "mailto: bianca.dragomir42@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></a>
+		</div>
+		<!--trademark-->
+		<p>
+			©Made by Dragomir Bianca-Nicola
+		</p>
+	</section>
+
+</body>
+</html>

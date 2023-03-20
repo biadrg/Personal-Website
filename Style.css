@@ -1,0 +1,455 @@
+/*--setari_generale--*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/*------ HEADER ------*/
+
+
+
+
+
+
+
+/*--setari_header_pt_pagina_home--*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    /*--imaginea_de_fundal_are_gradient_intre_doua_culori--*/
+    background-image: linear-gradient(rgba(27, 23, 78, 0.7), rgba(40, 8, 76, 0.7)), url(Images/home.jpg);
+    background-position: center;
+    /*--acoperirea_intregului_header--*/
+    background-size: cover;
+}
+
+nav{
+    /*--pt_a_se_display_la_acelasi_nivel_cu_logo-ul--*/
+    display: flex;
+    /*--padding_pentru_partea_din_dreapta_si_stranga_este_6%--*/
+    padding: 0% 6%;
+    /*--pt_spatiu_intre_elemente--*/
+    justify-content: space-betwen;
+    align-items: center;
+}
+
+nav img{
+    width: 300px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    /*--pt_a_le_pozitiona_in_aceeasi_linie--*/
+    display: inline-block;
+    /*--padding_de_8_pt_top_si_bottom_si_de_12_pt_left_si_right--*/
+    padding: 8px 12px;
+}
+
+.nav-links ul li a{
+    color: white;
+    /*--pt_a_nu_display_the_underline_pt_linkuri--*/
+    text-decoration: none;
+    font-size: 16px; 
+}
+
+/*--moficari_pt_linia_ce_apare_sub_nume--*/
+.nav-links ul li::after{
+    /*--pt_a_nu_adauga_nimic_sub_linie--*/
+    content: '';
+    /*--linia_nu_apare_pana_cand_nu_hover_deasupra_ei--*/
+    width: 0%;
+    height: 2px;
+    background: #b98ce3;
+    /*--pt_a_display_pe_o_noua_Linie--*/
+    display: block;
+    /*--pt_a_alinia_elementul_in_centru--*/
+    margin: auto;
+    /*--timpul_de_tranzitie_odata_ce_mouseul_over_deasupra--*/
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    /*--pt_a_se_pozitiona_in_raport_cu_ultimul_element--*/
+    position: absolute;
+    /*--textul_este_pozitionat_putin_sub_centrul_vertical_al_headerului--*/
+    top: 45%;
+    /*text_centrat_orizontal--*/
+    left: 5%;
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    /*--marginea_top_e_10_stanga_si_dreapta_e_0_si_cea_de_jos_e_40--*/
+    margin: 10px 0px 40px;
+    /*--inaltimea_liniei--*/
+    line-height: 35px;;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/*------ MAIN CONTENT ------*/
+
+
+
+
+
+
+
+.main-content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    /*--grosimea_textului--*/
+    font-weight: 600;
+}
+
+p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    /*--pt_spatiu_intre_elemente--*/
+    justify-content: space-between;
+}
+
+.col{
+    /*--setarea_lungimii_initiale--*/
+    flex-basis: 31%;
+    background: #b98ce3;
+    /*--pt_rotunjirea_colturilor--*/
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+}
+
+.col:hover{
+    background: #905dc0;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+h5{
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+
+
+
+
+/*------ FOOTER ------*/
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 3px 0;
+}
+
+.footer h3{
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer p{
+    color: black;
+}
+
+.icons .fa-brands,.icons .fa-solid{
+    color: #b98ce3;
+    margin: 0 13px 0px;
+    /*--pt_a_modifica_mouseul_din_default_in_pointer--*/
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------- ABOUT PAGE -------------------*/
+
+
+
+
+
+
+
+
+
+
+.about{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(27, 23, 78, 0.7), rgba(40, 8, 76, 0.7)), url(Images/about.JPG);
+    background-position: center;
+    /*--acoperirea_intregului_header--*/
+    background-size: cover;
+    /*--pt_a_se_adapta_in_functie_de_dimensiunea_ecranului--*/
+}
+
+.col_img{
+    /*--setarea_lungimii_initiale--*/
+    flex-basis: 30%;
+    border-radius: 90px;
+    margin-bottom: 50px;
+    /*--pt_a_se_adapta_in_functie_de_dimensiunea_ecranului--*/
+    position: relative;
+    /*--pt_pastrarea_imaginii_in_marginile_setate_si_ascunderea_overflowului--*/
+    overflow: hidden;
+}
+
+.col_img img{
+    width: 100%;
+}
+
+.layer{
+    opacity: 80%;
+    width: 100%;
+    height: 100%;
+    /*--pt_a_se_pozitiona_in_raport_cu_ultimul_element--*/
+    position: absolute;
+    /*--seteaza_diferenta_fata_de_ultimul_elemente_pozitionat--*/
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: #905dc0;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    /*--pt_a_se_pozitiona_in_raport_cu_ultimul_element--*/
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------- PORTOFOLIO PAGE -------------------*/
+
+
+
+
+
+
+
+
+
+
+.portofolio{
+    min-height: 60vh;
+    width: 100%;
+    background: #905dc0;
+    background-position: center;
+    /*--acoperirea_intregului_header--*/
+    background-size: cover;
+}
+
+.text-box1{
+    width: 90%;
+    color: white;
+    position: absolute;
+    /*--seteaza_diferenta_fata_de_ultimul_elemente_pozitionat--*/
+    top: 35%;
+    left: 5%;
+    text-align: center;
+}
+
+.text-box1 h1{
+    font-size: 62px;
+}
+
+.text-box1 p{
+    margin: 10px 0px 0px;
+    line-height: 35px;;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------- CONTACT PAGE -------------------*/
+
+
+
+
+
+
+
+
+
+
+.contact{
+    min-height: 60vh;
+    width: 100%;
+    background: #905dc0;
+    background-position: center;
+    /*--acoperirea_intregului_header--*/
+    background-size: cover;
+}
+
+.col1{
+    /*--setarea_lungimii_initiale--*/
+    flex-basis: 45%;
+    background: #b98ce3;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    /*--pt_a_adauga_padding_si_border_in_dimensiunea_totala_a_elementului==*/
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.col1:hover{
+    background: #905dc0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Other devices */
+@media screen and (max-width: 850px) {
+    .nav-links{
+         display: inline;
+    }
+    .row{
+         display: inline;
+    }
+    .text-box h1{
+        font-size: 350%;
+    }
+    .text-box p{
+        font-size: 150%;
+    }
+   }
+
+
+@media (min-width: 850px) and (max-width: 1250px){
+    .nav-links ul li a{
+        font-size: 170%;
+   }
+    .text-box h1{
+        font-size: 400%;
+    }
+    .text-box p{
+        font-size: 150%;
+    }  
+}
+
+@media (min-width: 1250px) {
+    .nav-links ul li a{
+        font-size: 230%;
+   }
+    .text-box h1{
+        font-size: 400%;
+    }
+    .text-box p{
+        font-size: 200%;
+    }  
+}
